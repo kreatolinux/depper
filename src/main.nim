@@ -26,7 +26,7 @@ proc dephandler(pkg: string, repo: string): string =
   except Exception:
     discard
 
-proc depper(pkg: string, repo: string, args: seq[string]): int =
+proc depper(pkg: string, repo: string): int =
   ## Dependency handler, mainly for nyaa
   echo dephandler(pkg, repo)
   result = 0
