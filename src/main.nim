@@ -28,7 +28,7 @@ proc dephandler(pkg: string, repo: string): string =
 
 proc depper(pkg: string, repo: string): int =
   ## Dependency handler, mainly for nyaa
-  echo dephandler(pkg, repo)
+  echo deduplicate(dephandler(pkg, repo).split(" "))
   result = 0
 
 dispatch depper, help={"pkg": "The nyaa repository", "pkg": "The package name"}
