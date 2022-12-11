@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Kreato Linux.  If not, see <https://www.gnu.org/licenses/>.
 import cligen
+import sequtils
 
 proc dephandler(pkg: string, repo: string): string =
   var deps: string
